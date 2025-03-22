@@ -1,6 +1,6 @@
 import React from "react";
 
-const ColorTextBox = ({ color, setColor }) => {
+const ColorTextBox = ({ color, setColor, handleSquareTextColorChange }) => {
 	return (
 		<div className="color-textbox">
 			<form className="color">
@@ -11,7 +11,11 @@ const ColorTextBox = ({ color, setColor }) => {
 					id="inputColor"
 					placeholder="Enter color"
 					value={color}
-					onChange={(e) => setColor(e.target.value)}
+					onChange={(e) => {
+						setColor(e.target.value);
+						console.log("Change");
+						handleSquareTextColorChange();
+					}}
 				/>
 			</form>
 		</div>

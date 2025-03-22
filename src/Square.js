@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
-const Square = ({ color }) => {
+const Square = ({ color, squareTextColor }) => {
 	let currentText = color === "" ? "No color" : color;
 	return (
 		<div className="square" style={{ backgroundColor: color }}>
-			<div>{currentText}</div>
+			<div style={{ color: squareTextColor }}>{currentText}</div>
 		</div>
 	);
 };
