@@ -5,7 +5,7 @@ import { useState } from "react";
 
 function App() {
 	const [color, setColor] = useState("blue");
-	console.log(color);
+	// console.log(color);
 	return (
 		<div className="App">
 			<Square color={color} />
