@@ -14,7 +14,7 @@ const ColorTextBox = ({ color, setColor, handleSquareTextColorChange }) => {
 					onChange={(e) => {
 						setColor(e.target.value);
 						console.log("Change");
-						handleSquareTextColorChange();
+						handleSquareTextColorChange(e.target.value);
 					}}
 				/>
 			</form>

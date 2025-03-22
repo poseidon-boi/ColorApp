@@ -7,9 +7,9 @@ function App() {
 	const [color, setColor] = useState("");
 	const square = document.querySelector(".square");
 	const [squareTextColor, setSquareTextColor] = useState("whitesmoke");
-	const handleSquareTextColorChange = () => {
+	const handleSquareTextColorChange = (inputColor) => {
 		setSquareTextColor(() => {
-			if (color === "") return "whitesmoke";
+			if (inputColor === "") return "whitesmoke";
 			const colorRGB = window
 				.getComputedStyle(square)
 				.getPropertyValue("background-color");
