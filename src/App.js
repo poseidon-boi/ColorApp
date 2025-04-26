@@ -29,8 +29,7 @@ function App() {
 				.map((str) => Number(str))
 				.reduce((acc, curr) => acc + curr, 0);
 			console.log(colorBrightness);
-			if (isNaN(colorBrightness)) return "whitesmoke";
-			else if (colorBrightness >= 383) return "black";
+			if (colorBrightness >= 383) return "black";
 			else return "whitesmoke";
 		});
 	};
